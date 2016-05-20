@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+    <fieldset>
+        <!-- 표  -->
+        <legend>회원가입</legend>
+      <table border="1" width="100%">
+       <!-- 테이블 선언. 간격. 참고로 <th></th>는 테이블에서 주제가 되는 부분(?) 표 내부의 제목에 사용-->
+          <colgroup>
+              <col width="20%"/>
+              </col>
+          </colgroup>
+          <tbody>
+                  <tr>
+                      <th scope="row"><label for="userId">아이디</label></th>
+                      <td><input type="text" id="userId" name="Name" value="아이디" />
+                      </td>
+                </tr>
+                <!-- scope는 <th> 열에 대한 주제인지, 행에대한 주제인지 알려줌.
+              col 은 해당 열의 제목 / row 는 해당 행의 제목 -->
+                <tr>
+                    <th><label for="userId">비밀번호</label></th>
+                    <td><input type="password" id="userPw" name="Name" value="비밀번호" />
+                    </td>
+                </tr>
+                <tr>
+                      <th scope="row"><label for="man">성별</label></th>
+                      <td>
+                          <input type="radio" name="sex" id="man"/><label for="man">남자</labal>
+                          <input type="radio" name="sex" id="Woman"/><label for="woman">여자</labal>
+                          <input type="radio" name="sex" id="bisexuality"/><label for="bisexuality">양성</labal>
+                      </td>
+               </tr>
+               <tr>
+                    <th scope="row"><label for="a1">결혼여부</label></th>
+                    <td>
+                        <input type="checkbox" id="a1"><label for="a1">미혼</label>
+                        <input type="checkbox" id="a2"><label for="a2">기혼</label>
+                        <input type="checkbox" id="a3"><label for="a3">앞으로예정</label>
+                        <input type="checkbox" id="a4"><label for="a4">못갈것같은 같은데 가면 로또</label>
+                        <input type="checkbox" id="a5"><label for="a5">중혼</label>
+                    </td>
+              </tr>
+              <tr>
+                  <th scope="row"><label for="a2">사진업로드</label></th>
+                  <td><input type="file" id="photoupload"/>
+                  </td>
+              </tr>
+        </tbody>
+     </table>
+
+    </fieldset>
+
+</body>
+</html>
