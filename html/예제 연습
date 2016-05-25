@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <legend> 회원가입 </legend>
+        <!-- fieldset로 이 표 안에다가 정보입력하겠다고 선언. legend가 곧 제목이 됨 -->
+            <table border=1 width="100%">
+            <!-- border=1 은 상자 테두리, width는 내부간격 -->
+    <colgroup>
+        <col width ="20%"/>
+    </colgroup>
+    <!--colgroup : 열 넓이를 그룹지어 관리하는 태그
+     col width : 내용이 있는만큼의 간격 설정-->
+
+     <tbody>
+        <tr>
+            <th scope="row"><label for="userId">아이디</label></th>
+            <!-- th : 제목격으로 들어갈 셀을 추가. scope 속성은 th 태그에서만 사용하며,
+            셀의 제목이 어디까지 영향을 미치는지 나타낸다.
+            th scope="row"는 즉, 해당 th(아이디)가 해당 row(행 ->)까지 영향을 미친다는 뜻-->
+            <td><input type="text" id="userId" name="Name" value="아이디" /></td>
+        </tr>
+        <!-- tr : 행 하나를 추가한다. / td : 셀 하나를 추가한다.
+         input type="text"는 텍스트를 입력할 곳/id는 고유 id/ name는 신경ㄴ/value="아이디"는
+         텍스르를 써놓은 칸에 미리 지정한 '아이디'라는 글자를 채워놓는 것.-->
+
+       <tr>
+           <th><label for="userPw">비밀번호</label>
+
+
+
+
+
+        </tr>
+
+
+     </tbody>
+
+
+
+</body>
+</html>

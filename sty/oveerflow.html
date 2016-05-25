@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .box{overflow:hidden;
+            width:200px; height:200px; border:1px #F00 solid}
+        .box img{width:100%;
+                margin-top:-30px;}
+
+                .visible{border:1px #f00 solid;}
+                .visible ul{margin:0;padding:0;}
+                .visible li{border:1px #f00 solid;}
+                .visible li first{width:300px;height:300px;overflow:hidden;}
+                .visible li.first img{width:100%;}
+
+    </style>
+
+
+</head>
+<body>
+
+    <!-- overflow(정해진 범위를 벗어났을 때 박스 안에 보여주는 화면이 있나, 없나 : hidden, visible -->
+    <!-- overflow hidden : 주어진 영역을 넘어가면 넘어간 부분을 숨긴다.
+                  visible : 주어진 영역을 넘어가도 보인다. -->
+    <div class="box">
+<img src="../img/책.jpg" alt="">
+    </div>
+
+
+    <div class="visible">
+    <ul>
+        <li class="first"><img src="../img/책.jpg" alt=""></li>
+        <li> d;lskdl;skdlsdklwkelkwdkwlkdlkw</li>
+        <li> d;lskdl;skdlsdklwkelkwdkwlkdlkw</li>
+
+    </ul>
+    </div>
+</body>
+</html>
